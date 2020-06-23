@@ -32,7 +32,7 @@ spec:
           containers:
             - name: drupal-cron
               image: juampynr/gcloud-cronjob:latest
-              env:kubectl create secret generic
+              env:
                 - name: GCLOUD_SA_KEY
                   valueFrom:
                     secretKeyRef:
